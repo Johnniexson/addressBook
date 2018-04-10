@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MY PHONEBOOK</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="contact.js" ></script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1> Welcome to My AddressBook</h1>
+                <p> My AddressBook is a platform to help you keep record of your family and friends.</p>
+            </header>
+        </div>
+        <h2> Get started!<br> Add new contact</h2>
+        <form>
+            FullName:
+            <input type="text" id="new_fname" name="fname"/><br>
+            PhoneNumber:
+            <input type="text" id="new_pnum" name="pnum"/><br>
+            Address:
+            <textarea name="address" id="new_address"></textarea><br>
+            <input type="reset" id="reset" value="Reset"/>
+            <input type="button" Value="Add Contact" class="add" onclick="add_row();"/>
+        </form>
+        
+        <hr>
+        <h2>Existing contacts:</h2>
+        <table align="center" cellspacing=2 cellpadding=5 id="data_table" border="1">
+            <tr>
+                <th>FullName</th>
+                <th>PhoneNumber</th>
+                <th>Address</th>
+            </tr>
+            <tr> </tr>
+        </table>
+        
+        <footer>
+            <p>About us || Disclaimer<br>Copywrite©2018<br> Powered by Johnniexson</p>
+        </footer>
+    
+    
+    
+    </body>
+</html>
